@@ -17,28 +17,24 @@
   }
 }
 
-.studentgryffindor {
+@mixin house-styles($housecolor) {
   @extend %studentCard;
 
   h2 {
-    color: $gryffindor;
+    color: $housecolor;
   }
+}
+
+.studentgryffindor {
+ @include house-styles($gryffindor);
 }
 
 .studentslytherin {
-  @extend %studentCard;
-
-  h2 {
-    color: $slytherin;
-  }
+  @include house-styles($slytherin);
 }
 
 .studenthufflepuff {
-  @extend %studentCard;
-
-  h2 {
-    color: $hufflepuff;
-  }
+  @include house-styles($hufflepuff);
 }
 
 .studentravenclaw {
