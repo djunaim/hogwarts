@@ -2,11 +2,11 @@ import './studentCard.scss';
 
 const createStudentCard = (student) => {
   const domString = `
-  <li class="studentCard>
+  <li class="studentCard">
     <div class="imgHolder">
       <img src=${student.picture}>
-      <h2>${student.name}</h2>
-    </div>
+    </div> 
+    <h2>${student.name}</h2>
   </li>
   `;
   return domString;
