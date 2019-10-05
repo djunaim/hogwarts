@@ -1,0 +1,50 @@
+@import '../../../styles/color';
+@import '../../../styles/variables';
+
+%studentCard {
+  width: 18%;
+  margin: 1%;
+  background-color: $gold;
+  box-shadow: $box-shadow;
+
+  .imgHolder {
+    height: 250px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+  }
+  }
+}
+
+.studentgryffindor {
+  @extend %studentCard;
+
+  h2 {
+    color: $gryffindor;
+  }
+}
+
+.studentslytherin {
+  @extend %studentCard;
+
+  h2 {
+    color: $slytherin;
+  }
+}
+
+.studenthufflepuff {
+  @extend %studentCard;
+
+  h2 {
+    color: $hufflepuff;
+  }
+}
+
+.studentravenclaw {
+  @extend %studentCard;
+
+  h2 {
+    color: $ravenclaw;
+  }
+}
